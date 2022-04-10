@@ -1,6 +1,8 @@
 const { Player } = require('discord-player');
 const { Client, Intents, Collection, MessageEmbed, MessageActionRow, MessageButton } = require('discord.js');
 const { readdirSync } = require('fs');
+const downloader = require("@discord-player/downloader").Downloader;
+
 
 let client = new Client({
     intents: [
@@ -16,6 +18,7 @@ client.player = new Player(client, client.config.opt.discordPlayer);
 client.commands = new Collection();
 
 const player = client.player
+player.use("YOUTUBE_DL", downloader);
 const events = readdirSync('./events/').filter(file => file.endsWith('.js'));
 
 for (const file of events) {
