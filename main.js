@@ -3,7 +3,6 @@ const { Client, Intents, Collection, MessageEmbed, MessageActionRow, MessageButt
 const { readdirSync } = require('fs');
 const downloader = require("@discord-player/downloader").Downloader;
 
-
 let client = new Client({
     intents: [
         Intents.FLAGS.GUILDS,
