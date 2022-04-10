@@ -1,7 +1,7 @@
 # Treble
 
 [![Stars](https://img.shields.io/github/stars/sensoorr/treble.svg)](https://github.com/sensoorr/treble)
-[![License](https://img.shields.io/github/license/sensoorr/treble.svg)](https://github.com/sensoorr/treble/blob/master/LICENSE)
+[![License](https://img.shields.io/github/license/sensoorr/treble.svg)](https://github.com/sensoorr/treble/blob/master/LICENSE)<br>
 A Discord music bot that supports YouTube, Spotify, Soundcloud, and many more!
 
 ## Features
