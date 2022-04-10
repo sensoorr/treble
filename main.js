@@ -1,7 +1,7 @@
 const { Player } = require('discord-player');
 const { Client, Intents, Collection, MessageEmbed, MessageActionRow, MessageButton } = require('discord.js');
 const { readdirSync } = require('fs');
-const downloader = require("@discord-player/downloader").Downloader;
+const downloader = require('@discord-player/downloader').Downloader;
 
 let client = new Client({
     intents: [

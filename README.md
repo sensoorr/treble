@@ -10,7 +10,7 @@ A Discord music bot that supports YouTube, Spotify, Soundcloud, and many more!
   * Easy to use commands
   * Fast loading of songs
 
-## Supported sources and formats
+## Supported sources
 Treble supports all platforms available using [discord-player](https://github.com/Androz2091/discord-player) and its `@discord-player/extractor` and `@discord-player/downloader` modules.
 ### Sources
   * YouTube
