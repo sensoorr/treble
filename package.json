@@ -1,0 +1,22 @@
+{
+  "name": "treble",
+  "version": "1.0.0",
+  "description": "A new, fast, and reliable Discord music bot!",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sensor",
+  "license": "MIT",
+  "dependencies": {
+    "@discord-player/downloader": "^3.0.1",
+    "@discord-player/extractor": "^3.0.2",
+    "@discordjs/opus": "^0.5.3",
+    "@discordjs/rest": "^0.3.0",
+    "@discordjs/voice": "^0.8.0",
+    "discord-player": "^5.2.2",
+    "discord.js": "^13.6.0",
+    "ffmpeg-static": "^4.4.1",
+    "pretty-ms": "^7.0.1"
+  }
+}
