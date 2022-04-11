@@ -2,6 +2,7 @@ const { Player } = require('discord-player');
 const { Client, Intents, Collection, MessageEmbed, MessageActionRow, MessageButton } = require('discord.js');
 const { readdirSync } = require('fs');
 const downloader = require('@discord-player/downloader').Downloader;
+const DISCORD_TOKEN = process.env.DISCORD_TOKEN;
 
 let client = new Client({
     intents: [
@@ -67,8 +68,8 @@ player.on('queueEnd', (queue) => {
     queue.metadata.send({ embeds: [embed]});
 });
 
-if(client.config.TOKEN){
-client.login(client.config.TOKEN).catch(e => {
+if(DISCORD_TOKEN){
+client.login(DISCORD_TOKEN).catch(e => {
 console.log("The token you entered is incorrect. Please check if all of the bot's intents are switched on.")
 })
 } else {
