@@ -1,6 +1,6 @@
 {
   "name": "treble",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A new, fast, and reliable Discord music bot!",
   "main": "main.js",
   "scripts": {
@@ -16,6 +16,7 @@
     "@discordjs/voice": "^0.8.0",
     "discord-player": "^5.2.2",
     "discord.js": "^13.6.0",
+    "dotenv": "^16.0.0",
     "ffmpeg-static": "^4.4.1",
     "pretty-ms": "^7.0.1"
   }

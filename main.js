@@ -2,7 +2,8 @@ const { Player } = require('discord-player');
 const { Client, Intents, Collection, MessageEmbed, MessageActionRow, MessageButton } = require('discord.js');
 const { readdirSync } = require('fs');
 const downloader = require('@discord-player/downloader').Downloader;
-const DISCORD_TOKEN = process.env.DISCORD_TOKEN;
+require('dotenv').config();
+const DISCORD_TOKEN = process.env.TOKEN;
 
 let client = new Client({
     intents: [
@@ -73,5 +74,5 @@ client.login(DISCORD_TOKEN).catch(e => {
 console.log("The token you entered is incorrect. Please check if all of the bot's intents are switched on.")
 })
 } else {
-console.log("Please write the bot token in the config.js file.")
+console.log("Please write the bot token in the .env file as TOKEN = YOUR_TOKEN_HERE.")
 }
