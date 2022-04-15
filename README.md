@@ -24,7 +24,7 @@ Treble supports all platforms available using [discord-player](https://github.co
 
 ## Self Hosting
 To self host Treble, you will need:
-  * A Discord bit and token
+  * A Discord bot and token
   * A computer with node.js installed
 First, execute these commands:
 ```
