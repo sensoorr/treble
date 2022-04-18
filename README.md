@@ -1,7 +1,11 @@
+![Treble](https://i.imgur.com/uckJrMjs.png)
+
 # Treble
 
-[![Stars](https://img.shields.io/github/stars/sensoorr/treble.svg)](https://github.com/sensoorr/treble)
-[![License](https://img.shields.io/github/license/sensoorr/treble.svg)](https://github.com/sensoorr/treble/blob/master/LICENSE)<br>
+![Discord](https://img.shields.io/discord/961295522092707872?label=discord&style=for-the-badge&logo=discord&color=5865F2&logoColor=white)
+[![Stars](https://img.shields.io/github/stars/sensoorr/treble.svg?label=stars&style=for-the-badge&logo=github&color=5865F2)](https://github.com/sensoorr/treble)
+[![License](https://img.shields.io/github/license/sensoorr/treble.svg?label=license&style=for-the-badge&logo=github&color=5865F2)](https://github.com/sensoorr/treble/blob/master/LICENSE)
+
 A Discord music bot that supports YouTube, Spotify, Soundcloud, and many more!
 
 ## Features
@@ -37,6 +41,7 @@ Now, create a .env file and add this:
 ```
 DISCORD_TOKEN = "token"
 ```
+[.env](https://i.imgur.com/jsWS3xi.png)
 Next, go into your bot's developer portal and enable all intents.
 Finally, run this command to start the bot:
 ```
