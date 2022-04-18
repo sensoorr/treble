@@ -41,7 +41,7 @@ Now, create a .env file and add this:
 ```
 DISCORD_TOKEN = "token"
 ```
-[.env](https://i.imgur.com/jsWS3xi.png)
+![.env](https://i.imgur.com/jsWS3xi.png)
 Next, go into your bot's developer portal and enable all intents.
 Finally, run this command to start the bot:
 ```
