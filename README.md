@@ -3,8 +3,8 @@
 # Treble
 
 [![Discord](https://img.shields.io/discord/961295522092707872?label=discord&style=for-the-badge&logo=discord&color=5865F2&logoColor=white)](https://discord.gg/Y4aehUckxa)
-[![Stars](https://img.shields.io/github/stars/sensoorr/treble.svg?label=stars&style=for-the-badge&logo=github&color=5865F2)](https://github.com/sensoorr/treble)
-[![License](https://img.shields.io/github/license/sensoorr/treble.svg?label=license&style=for-the-badge&logo=github&color=5865F2)](https://github.com/sensoorr/treble/blob/master/LICENSE)
+[![Stars](https://img.shields.io/github/stars/sensoorr/treble.svg?label=stars&style=for-the-badge&logo=github&color=5865F2&logoColor=white)](https://github.com/sensoorr/treble)
+[![License](https://img.shields.io/github/license/sensoorr/treble.svg?label=license&style=for-the-badge&logo=github&color=5865F2&logoColor=white)](https://github.com/sensoorr/treble/blob/master/LICENSE)
 
 A Discord music bot that supports YouTube, Spotify, Soundcloud, and many more!
 
