@@ -7,7 +7,7 @@ module.exports = {
     async execute(client, message, args) {
         const queue = client.player.getQueue(message.guild.id);
 
-   if (!queue || !queue.playing) return message.channel.send({ content: `No music is currently playing.` });
+        if (!queue || !queue.playing) return message.channel.send({ content: `No music is currently playing.` });
 
         const actualFilter = queue.getFiltersEnabled()[0];
 

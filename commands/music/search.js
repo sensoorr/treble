@@ -9,7 +9,7 @@ module.exports = {
 
     async execute(client, message, args) {
       
-if (!args[0]) return message.channel.send({ content: `Please enter a valid song name.` });
+        if (!args[0]) return message.channel.send({ content: `Please enter a valid song name.` });
 
         const res = await client.player.search(args.join(' '), {
             requestedBy: message.member,
@@ -64,7 +64,6 @@ if (!args[0]) return message.channel.send({ content: `Please enter a valid song 
 
             queue.addTrack(res.tracks[Number(query.content)-1]);
             if (!queue.playing) await queue.play();
-           
         });
 
         collector.on('end', (msg, reason) => {

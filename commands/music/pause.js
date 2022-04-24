@@ -6,13 +6,13 @@ module.exports = {
     utilisation: '{prefix}pause',
     voiceChannel: true,
 
-    execute(client, message) {
+    async execute(client, message) {
         const queue = client.player.getQueue(message.guild.id);
         const track = queue.current;
 
         if (!queue || !queue.playing) return message.channel.send({ content: `No music is currently playing.` });
 
-        queue.setPaused(true);
+        await queue.setPaused(true);
 
         const embed = new MessageEmbed();
         embed.setColor('BLUE');

@@ -21,6 +21,6 @@ module.exports = {
 
         const success = queue.setVolume(vol);
 
-        return message.channel.send({ content: success ? `New volume: **${vol}%**/**${maxVol}**` : `Something went wrong.` }) ;
+        return message.channel.send({ content: success ? `New volume: **${vol}%**/**${maxVol}%**` : `Something went wrong.` }) ;
     },
 };

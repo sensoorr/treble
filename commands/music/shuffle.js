@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { MessageEmbed, Permissions } = require('discord.js');
 
 module.exports = {
     name: 'shuffle',
@@ -6,16 +6,20 @@ module.exports = {
     utilisation: '{prefix}shuffle',
     voiceChannel: true,
 
-    execute(client, message) {
-        const queue = client.player.getQueue(message.guild.id);
+    async execute(client, message) {
+        if (message.member.permissions.has(Permissions.FLAGS.KICK_MEMBERS)) {
+            const queue = client.player.getQueue(message.guild.id);
 
-        if (!queue || !queue.playing) return message.channel.send({ content: `No music is currently playing.` });
-
-        queue.shuffle();
-
-        const embed = new MessageEmbed();
-        embed.setColor('BLUE');
-        embed.setTitle(`Shuffled the queue`);
-        message.channel.send({ embeds: [embed]} );
+            if (!queue || !queue.playing) return message.channel.send({ content: `No music is currently playing.` });
+    
+            await queue.shuffle();
+    
+            const embed = new MessageEmbed();
+            embed.setColor('BLUE');
+            embed.setTitle(`Shuffled the queue`);
+            message.channel.send({ embeds: [embed]} );
+        } else {
+            message.channel.send({ content: "You don't have permission to use this command." });
+        };
     },
 };

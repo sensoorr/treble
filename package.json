@@ -2,7 +2,7 @@
   "name": "treble",
   "version": "1.0.1",
   "description": "A new, fast, and reliable Discord music bot!",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -65,14 +65,17 @@ player.on('channelEmpty', (queue) => {
 player.on('queueEnd', (queue) => {
     const embed = new MessageEmbed();
     embed.setColor('BLUE');
-    embed.setTitle("The songs in the queue have finished.")
+    embed.setTitle("The songs in the queue have finished.");
     queue.metadata.send({ embeds: [embed]});
 });
 
-if(DISCORD_TOKEN){
-client.login(DISCORD_TOKEN).catch(e => {
-console.log("The token you entered is incorrect. Please check if all of the bot's intents are switched on.")
-})
-} else {
-console.log("Please write the bot token in the .env file as DISCORD_TOKEN = YOUR_TOKEN_HERE.")
-}
+client.on('shardError', error => {
+	console.error('A websocket connection encountered an error: ', error);
+});
+
+if(DISCORD_TOKEN) {
+    client.login(DISCORD_TOKEN).catch(e => {
+    console.log("The token you entered is incorrect. Please check if all of the bot's intents are switched on.");
+})} else {
+    console.log("Please write the bot token in the .env file as DISCORD_TOKEN = YOUR_TOKEN_HERE.");
+};
