@@ -4,7 +4,7 @@ module.exports = {
     utilisation: '{prefix}discord',
     voiceChannel: false,
 
-    async execute(message) {
-        message.channel.send({ content: "https://discord.gg/Y4aehUckxa" });
+    async execute(client, message) {
+        await message.channel.send({ content: "https://discord.gg/Y4aehUckxa" });
     },
 };
